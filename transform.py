@@ -106,3 +106,24 @@ def selective_transformation(path, feature_mark, banned):
     
 
 data = selective_transformation(example_df_path, feature_mark_to_select_by, features_list_with_names_that_shouldnt_be_included)
+
+
+# A Data Plotting Example with the use of qqplots
+# from statsmodels.graphics.gofplots import qqplot
+# features = get_features(data, feature_mark, banned_list)
+# groups = [x for x in data[a_group_column].unique()]
+#
+# for feature in features:
+#     fig, axes = plt.subplots(3,2, figsize = (10,10))
+#     axes = axes.ravel()
+#     axes[0].hist(data[feature], bins = 50);
+#     axes[0].set_title("All Data")
+#
+#     axes[1].set_title("Normalized histogram per group")
+#     for group in groups:
+#         axes[1].hist(data[feature][data[a_group_column] == group], bins = 100, label = state, density = True, alpha = 0.5)
+#     axes[1].legend()
+#
+#     for i, (group, ax) in enumerate(zip(groups, axes[2:])):
+#         ax.set_title(f"{group} - {feature}")
+#         q = qqplot(data[feature][data[a_group_column] == group], ax = ax, line = "s")
