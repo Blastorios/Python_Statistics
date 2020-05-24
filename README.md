@@ -1,4 +1,3 @@
-# Python_Statistics
-Generalized Statistical Methods with Python
+# Generalized Python Statistics
 
-For more information, check www.stats.re-syst.org
+This repo holds both scripts for the analysis of raw data as for the plotting of relevant results.
